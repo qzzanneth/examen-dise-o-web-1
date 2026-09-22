@@ -1,0 +1,259 @@
+/*
+© 2026 sofia aneth hernandez quiñonez.
+Todos los derechos reservados.
+Hoja de estilos CSS1 - Diseño Web I.
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 42px;
+}
+
+header p {
+    font-size: 20px;
+}
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.contenido,
+.tarjeta {
+    padding: 35px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 30px 0;
+}
+
+.menu a {
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+}
+
+
+/* =========================
+   PÁGINA INDEX
+   ========================= */
+
+.pagina-index {
+    background: #f2e9ff;
+    color: #30134d;
+}
+
+.pagina-index header {
+    background: #7b2cbf;
+    color: white;
+}
+
+.pagina-index .contenido {
+    background: white;
+    box-shadow: 0 5px 20px #c9b6e4;
+}
+
+.pagina-index .menu a {
+    background: #9d4edd;
+    color: white;
+}
+
+.pagina-index .menu a:hover {
+    background: #5a189a;
+}
+
+
+/* =========================
+   PÁGINA 01
+   ========================= */
+
+.pagina-01 {
+    background: #e8f8ff;
+    color: #123047;
+}
+
+.pagina-01 header {
+    background: #0077b6;
+    color: white;
+}
+
+.pagina-01 .tarjeta {
+    background: white;
+    border-left: 8px solid #00b4d8;
+}
+
+.pagina-01 .menu a {
+    background: #00b4d8;
+    color: white;
+}
+
+.pagina-01 .menu a:hover {
+    background: #0077b6;
+}
+
+
+/* =========================
+   PÁGINA 02
+   ========================= */
+
+.pagina-02 {
+    background: #fff3e0;
+    color: #542800;
+}
+
+.pagina-02 header {
+    background: #f77f00;
+    color: white;
+}
+
+.pagina-02 .tarjeta {
+    background: #fff;
+    box-shadow: 0 8px 20px #e7c9a5;
+}
+
+.intereses {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.intereses div {
+    flex: 1;
+    min-width: 200px;
+    padding: 20px;
+    border-radius: 15px;
+    background: #ffd166;
+}
+
+.pagina-02 .menu a {
+    background: #f77f00;
+    color: white;
+}
+
+.pagina-02 .menu a:hover {
+    background: #d65a00;
+}
+
+
+/* =========================
+   PÁGINA 03
+   ========================= */
+
+.pagina-03 {
+    background: #e8f5e9;
+    color: #173b1a;
+}
+
+.pagina-03 header {
+    background: #2a9d8f;
+    color: white;
+}
+
+.pagina-03 .tarjeta {
+    background: white;
+    border-radius: 5px;
+    border-top: 8px solid #2a9d8f;
+}
+
+.pagina-03 li {
+    margin: 15px 0;
+    font-size: 18px;
+}
+
+.pagina-03 .menu a {
+    background: #2a9d8f;
+    color: white;
+}
+
+.pagina-03 .menu a:hover {
+    background: #1d6f66;
+}
+
+
+/* =========================
+   PÁGINA 04
+   ========================= */
+
+.pagina-04 {
+    background: #111827;
+    color: #f9fafb;
+}
+
+.pagina-04 header {
+    background: #1f2937;
+}
+
+.pagina-04 .tarjeta {
+    background: #374151;
+    border: 2px solid #9ca3af;
+}
+
+.proyecto {
+    padding: 20px;
+    margin-top: 25px;
+    background: #4b5563;
+    border-radius: 15px;
+}
+
+.pagina-04 .menu a {
+    background: #6b7280;
+    color: white;
+}
+
+.pagina-04 .menu a:hover {
+    background: #9ca3af;
+    color: #111827;
+}
+
+
+/* =========================
+   ADAPTACIÓN A CELULAR
+   ========================= */
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    .contenido,
+    .tarjeta {
+        padding: 20px;
+    }
+
+    .menu {
+        flex-direction: column;
+    }
+
+    .menu a {
+        text-align: center;
+    }
+}
